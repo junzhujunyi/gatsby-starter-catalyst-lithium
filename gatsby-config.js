@@ -1,21 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Lithium`,
-    description: `Speed up your Gatsby development workflow.`,
-    keywords: [`gatsby`, `theme`, `react`, `blog`],
-    author: `Eric Howey`,
+    title: `骏注骏译`,
+    description: `书香君带你走入《诗经》的世界`,
+    keywords: [`钟国骏`, `书香君`, `诗经`, `注释`, `翻译`],
+    author: `书香君`,
+
+
     siteUrl: `https://gatsby-starter-catalyst-helium.netlify.app`, //Change to you site address, required for sitemap.xml and robots.txt file among other things
     menuLinks: [
       {
-        name: `About`,
+        name: `关于`,
         link: `/about`,
       },
       {
-        name: `Work`,
-        link: `/work`,
-      },
-      {
-        name: `Contact`,
+        name: `联系我`,
         link: `/contact`,
       },
     ],
@@ -27,7 +25,7 @@ module.exports = {
       },
       {
         name: `Instagram`,
-        link: `https://www.instagram.com`,
+        link: `/contact`,
         location: `all`, //Options are "all", "header", "footer"
       },
       {
@@ -38,6 +36,9 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-theme-catalyst-lithium`,
       options: {
@@ -47,8 +48,11 @@ module.exports = {
         excerptLength: 140,
         // Lithium theme
         useHero: true,
-        useAlertBanner: true,
+        useAlertBanner: false,
+        postListTitle: `诗经`,
+        displayPostListTitle: false,
       },
+
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -59,8 +63,12 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `minimal-ui`,
-        icon: `content/assets/catalyst-site-icon.png`, // This path is relative to the root of the site.
+        icon: `content/assets/shijing-logo.png`, // This path is relative to the root of the site.
       },
+      variants: {
+        siteLogo: `content/assets/shijing-logo.png`,
+      },
+      
     },
   ],
 }
