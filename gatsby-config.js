@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `骏注骏译`,
+    title: `致敬诗经之骏注骏译`,
     description: `书香君带你走入《诗经》的世界`,
     keywords: [`钟国骏`, `书香君`, `诗经`, `注释`, `翻译`],
     author: `书香君`,
@@ -12,27 +12,15 @@ module.exports = {
         name: `关于`,
         link: `/about`,
       },
-      {
-        name: `联系我`,
-        link: `/contact`,
-      },
+
     ],
     socialLinks: [
       {
         name: `Email`,
-        link: `eric@erichowey.dev`,
-        location: `footer`, //Options are "all", "header", "footer"
-      },
-      {
-        name: `Instagram`,
-        link: `/contact`,
+        link: `3297852834@qq.com`,
         location: `all`, //Options are "all", "header", "footer"
       },
-      {
-        name: `Twitter`,
-        link: `https://www.twitter.com/erchwy`,
-        location: `all`, //Options are "all", "header", "footer"
-      },
+
     ],
   },
   plugins: [
