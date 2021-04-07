@@ -84,11 +84,11 @@ const Hero = () => {
               color: baseColors.gray[8],
             }}
           >
-            《诗经》自有一片天地，书香君带你走入古人之江湖。
+            《诗经》自有一片天地，书香君带你走入春秋时代。
           </Themed.p>
           <Button
             as={Link}
-            to="/contact"
+            to="/about"
             sx={{
               fontSize: [2, 3, null, null, null],
               fontWeight: "bold",
