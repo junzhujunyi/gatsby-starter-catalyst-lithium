@@ -6,7 +6,7 @@ module.exports = {
     author: `书香君`,
 
 
-    siteUrl: `https://gatsby-starter-catalyst-helium.netlify.app`, //Change to you site address, required for sitemap.xml and robots.txt file among other things
+    siteUrl: `https://shuxiangjun.gtsb.io/`, //Change to you site address, required for sitemap.xml and robots.txt file among other things
     menuLinks: [
       {
         name: `关于`,
